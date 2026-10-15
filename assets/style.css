@@ -143,7 +143,6 @@ code {
 
 .btn-primary { background: var(--red); color: #fff; }
 .btn-paper { background: var(--card); color: var(--ink); }
-.btn-coffee { background: #ffdd00; color: #000; }
 
 /* Secciones */
 .section {
