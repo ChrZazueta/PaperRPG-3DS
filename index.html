@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PaperRPG Dual Screen</title>
+<meta name="description" content="Port nativo para Nintendo 3DS basado en la decompilación de Paper Mario 64. Interfaz táctil, save states, 3D y 30 fps estables. Necesitas tu propia ROM.">
+<meta property="og:title" content="PaperRPG Dual Screen — port nativo para Nintendo 3DS">
+<meta property="og:description" content="Interfaz táctil, save states, mod menu, 3D estereoscópico y 30 fps estables en una Old 3DS.">
+<meta property="og:image" content="assets/img/logo.png">
+<link rel="icon" href="assets/img/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="nav-brand" href="#top"><img src="assets/img/icon.png" alt="" width="28" height="28"> PaperRPG</a>
+  <nav class="nav-links">
+    <a href="#features" data-i18n="nav.features">Características</a>
+    <a href="#gallery" data-i18n="nav.gallery">Galería</a>
+    <a href="#install" data-i18n="nav.install">Instalación</a>
+    <a href="#faq">FAQ</a>
+    <a href="#support" data-i18n="nav.support">Apoyar</a>
+  </nav>
+  <button class="lang" id="lang" type="button" aria-label="Cambiar idioma / Change language">EN</button>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <img class="hero-logo" src="assets/img/logo.png" alt="PaperRPG — 3DS Dual Screen" width="900" height="560">
+  <p class="hero-tag" data-i18n="hero.tag">Port nativo para Nintendo 3DS basado en la decompilación de Paper Mario 64. Sin emulación: el juego corre directo en la consola, con las dos pantallas.</p>
+  <div class="hero-cta">
+    <a class="btn btn-primary" href="https://github.com/ChrZazueta/PaperRPG-3DS/releases/latest" data-i18n="hero.download">Descargar</a>
+    <a class="btn btn-paper" href="#install" data-i18n="hero.how">Cómo instalar</a>
+  </div>
+  <p class="hero-note" data-i18n-html="hero.note">Necesitas <strong>tu propia copia</strong> del juego (Paper Mario, N64, versión USA). Aquí no se distribuye ninguna ROM ni contenido de Nintendo.</p>
+</section>
+
+<section class="section" id="features">
+  <h2 class="cut" data-i18n="features.title">Características</h2>
+  <div class="cards">
+    <article class="card">
+      <h3 data-i18n="f1.t">Nativo y fluido</h3>
+      <p data-i18n="f1.d">El código del juego compilado para el procesador de la 3DS. 30 fps estables incluso en una Old 3DS.</p>
+    </article>
+    <article class="card">
+      <h3 data-i18n="f2.t">Pantalla táctil</h3>
+      <p data-i18n="f2.d">Medallas, objetos, mapa, espíritus y estadísticas siempre a la mano en la pantalla inferior. Cambio rápido de compañero con un toque.</p>
+    </article>
+    <article class="card">
+      <h3 data-i18n="f3.t">Batallas táctiles</h3>
+      <p data-i18n="f3.d">La rueda de comandos original responde al toque, y eliges a tu objetivo tocando su imagen.</p>
+    </article>
+    <article class="card">
+      <h3 data-i18n="f4.t">Save states</h3>
+      <p data-i18n="f4.d">Tres espacios con miniatura y fecha para guardar y volver en cualquier momento.</p>
+    </article>
+    <article class="card">
+      <h3 data-i18n="f5.t">Mod menu</h3>
+      <p data-i18n="f5.d">Monedas infinitas, modo dios, HP/FP/BP al máximo, carrera rápida, golpe de un solo impacto y más. Al apagarlos todo vuelve a como estaba.</p>
+    </article>
+    <article class="card">
+      <h3 data-i18n="f6.t">3D y más opciones</h3>
+      <p data-i18n="f6.d">3D estereoscópico opcional, modo oscuro, filtro de imagen, botón Z configurable, Skip/Auto en cinemáticas y menús en español o inglés.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <h2 class="cut" data-i18n="gallery.title">Galería</h2>
+  <div class="gallery">
+    <figure><img src="assets/img/shots/toadtown.png" alt="" width="848" height="1088" loading="lazy"><figcaption data-i18n="g1">Toad Town con el panel táctil</figcaption></figure>
+    <figure><img src="assets/img/shots/koopabros.png" alt="" width="848" height="1088" loading="lazy"><figcaption data-i18n="g2">Jefe: los Koopa Bros, con la rueda de comandos táctil</figcaption></figure>
+    <figure><img src="assets/img/shots/settings.png" alt="" width="848" height="1088" loading="lazy"><figcaption data-i18n="g3">Ajustes, mod menu y save states</figcaption></figure>
+    <figure><img src="assets/img/shots/modmenu.png" alt="" width="848" height="1088" loading="lazy"><figcaption data-i18n="g4">Mod menu</figcaption></figure>
+  </div>
+</section>
+
+<section class="section" id="install">
+  <h2 class="cut" data-i18n="install.title">Instalación</h2>
+  <ol class="steps">
+    <li>
+      <h3 data-i18n="s1.t">Prepara tu 3DS</h3>
+      <p data-i18n-html="s1.d">Necesitas una consola con firmware personalizado (Luma3DS). Si aún no lo tienes, sigue la guía oficial de la comunidad: <a href="https://3ds.hacks.guide/" rel="noopener">3ds.hacks.guide</a>.</p>
+    </li>
+    <li>
+      <h3 data-i18n="s2.t">Haz el dump de tu cartucho</h3>
+      <p data-i18n-html="s2.d">Extrae la ROM de <strong>tu propio</strong> cartucho de Paper Mario (N64, versión USA) en formato <code>.z64</code>. Para comprobar que es la correcta, su SHA-1 debe ser:</p>
+      <code class="hash">3837f44cda784b466c9a2d99df70d77c322b97a0</code>
+    </li>
+    <li>
+      <h3 data-i18n="s3.t">Cópiala a la SD</h3>
+      <p data-i18n-html="s3.d">Ponle de nombre <code>baserom.z64</code> y cópiala a <code>sdmc:/3ds/papermario/baserom.z64</code> (crea la carpeta si no existe).</p>
+    </li>
+    <li>
+      <h3 data-i18n="s4.t">Instala el port</h3>
+      <p data-i18n-html="s4.d"><strong>Recomendado:</strong> instala <code>papermario.cia</code> con FBI y ábrelo desde el menú HOME. También puedes copiar <code>papermario.3dsx</code> a <code>sdmc:/3ds/</code> y abrirlo desde el Homebrew Launcher, aunque el audio usa menos recursos con el CIA.</p>
+    </li>
+  </ol>
+  <p class="center"><a class="btn btn-primary" href="https://github.com/ChrZazueta/PaperRPG-3DS/releases/latest" data-i18n="install.download">Descargar la última versión</a></p>
+</section>
+
+<section class="section" id="faq">
+  <h2 class="cut">FAQ</h2>
+  <details>
+    <summary data-i18n="q1">¿Por qué necesito mi propia ROM?</summary>
+    <p data-i18n="a1">El port no incluye gráficos, música ni textos del juego: los lee de tu ROM al arrancar. Así no se distribuye nada de Nintendo.</p>
+  </details>
+  <details>
+    <summary data-i18n="q2">¿Funciona con la versión europea o japonesa?</summary>
+    <p data-i18n="a2">Por ahora no. Solo la versión USA (código NMQE). Si usas otra, el port te avisa al abrirlo.</p>
+  </details>
+  <details>
+    <summary data-i18n="q3">¿En qué consolas funciona?</summary>
+    <p data-i18n="a3">Se desarrolló y probó en una Old 3DS XL; también corre en New 3DS/2DS. Necesita Luma3DS.</p>
+  </details>
+  <details>
+    <summary data-i18n="q4">¿Dónde se guarda mi partida?</summary>
+    <p data-i18n-html="a4">En <code>sdmc:/3ds/papermario/save.flash</code>; los save states en <code>state1.bin</code>–<code>state3.bin</code> y los ajustes en <code>config.ini</code>, en la misma carpeta. Los save states se invalidan al actualizar el port; la partida normal no.</p>
+  </details>
+  <details>
+    <summary data-i18n="q5">¿Puedo usar mi partida de un emulador?</summary>
+    <p data-i18n="a5">Todavía no hay un importador; es una idea para versiones futuras.</p>
+  </details>
+  <details>
+    <summary data-i18n="q6">Encontré un error, ¿qué hago?</summary>
+    <p data-i18n-html="a6">Repórtalo en <a href="https://github.com/ChrZazueta/PaperRPG-3DS/issues" rel="noopener">GitHub Issues</a> con una foto o video y el mapa donde pasó.</p>
+  </details>
+</section>
+
+<section class="section" id="support">
+  <h2 class="cut" data-i18n="support.title">Apoya el proyecto</h2>
+  <div class="support">
+    <p data-i18n="support.d">El port es gratis y lo seguirá siendo. Si te gusta y quieres invitarme un café, se agradece muchísimo. ☕</p>
+    <iframe id="kofiframe" src="https://ko-fi.com/chrisplay/?hidefeed=true&amp;widget=true&amp;embed=true&amp;preview=true" title="chrisplay" height="712" loading="lazy"></iframe>
+    <a class="btn btn-coffee" href="https://ko-fi.com/chrisplay" rel="noopener">Ko-fi</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p data-i18n-html="legal">PaperRPG Dual Screen es un proyecto de fans sin fines de lucro, sin relación con Nintendo, Intelligent Systems ni ninguna de sus filiales. Paper Mario y Nintendo 3DS son marcas de sus respectivos dueños. No se distribuye ninguna ROM ni contenido con copyright: cada usuario debe usar una copia legal de su propio cartucho.</p>
+  <p data-i18n-html="credits">Basado en la decompilación de Paper Mario de <a href="https://github.com/pmret/papermario" rel="noopener">pmret</a>. Hecho con <a href="https://devkitpro.org" rel="noopener">devkitPro</a>, libctru y citro3d. Port por <a href="https://github.com/ChrZazueta" rel="noopener">ChrZazueta</a>.</p>
+</footer>
+
+<script src="assets/i18n.js"></script>
+</body>
+</html>
