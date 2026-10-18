@@ -258,6 +258,30 @@ code {
 
 .steps p { margin: 0; }
 
+.qr {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 14px;
+  padding: 14px;
+  background: var(--paper-2);
+  border: 2px dashed var(--line);
+  border-radius: var(--radius);
+}
+.qr img {
+  flex: none;
+  width: 180px;
+  height: 180px;
+  background: #fff;
+  border: 3px solid var(--line);
+  border-radius: 8px;
+  padding: 6px;
+}
+.qr h4 { margin: 0 0 6px; font: 800 1.15rem/1.2 "Baloo 2", sans-serif; }
+@media (max-width: 560px) {
+  .qr { flex-direction: column; text-align: center; }
+}
+
 .hash {
   display: block;
   margin-top: 8px;

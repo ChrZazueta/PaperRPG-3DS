@@ -36,6 +36,8 @@
     "s3.d": "Name it <code>baserom.z64</code> and copy it to <code>sdmc:/3ds/papermario/baserom.z64</code> (create the folder if it doesn't exist).",
     "s4.t": "Install the port",
     "s4.d": "<strong>Recommended:</strong> install <code>papermario.cia</code> with FBI and launch it from the HOME Menu. You can also copy <code>papermario.3dsx</code> to <code>sdmc:/3ds/</code> and open it from the Homebrew Launcher, but audio runs lighter with the CIA.",
+    "qr.t": "Install with a QR code from FBI",
+    "qr.d": "With the console online, open <strong>FBI</strong> &rarr; <strong>Remote Install</strong> &rarr; <strong>Scan QR Code</strong> and point the camera at this code. FBI downloads and installs the latest <code>papermario.cia</code>. You still need your <code>baserom.z64</code> on the SD card (step 3).",
     "install.download": "Download the latest version",
     "q1": "Why do I need my own ROM?",
     "a1": "The port contains no graphics, music or text from the game: it reads them from your ROM at startup. That way nothing from Nintendo is distributed.",
