@@ -286,7 +286,7 @@ code {
   border-radius: 8px;
   padding: 6px;
 }
-.qr figcaption { display: grid; gap: 2px; }
+.qr figcaption { line-height: 1.5; }
 .qr figcaption strong { font: 800 1.1rem/1.2 "Baloo 2", sans-serif; }
 .qr figcaption span { color: var(--ink-soft); font-size: .92rem; }
 .qr figcaption code { font-size: .85rem; }
