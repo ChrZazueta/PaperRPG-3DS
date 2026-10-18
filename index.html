@@ -37,7 +37,7 @@
     <a class="btn btn-primary" href="https://github.com/ChrZazueta/PaperRPG-3DS/releases/latest" data-i18n="hero.download">Descargar</a>
     <a class="btn btn-paper" href="#install" data-i18n="hero.how">Cómo instalar</a>
   </div>
-  <p class="hero-note" data-i18n-html="hero.note">Necesitas <strong>tu propia copia</strong> del juego (Paper Mario, N64, versión USA). Aquí no se distribuye ninguna ROM ni contenido de Nintendo.</p>
+  <p class="hero-note" data-i18n-html="hero.note">Necesitas <strong>tu propia copia</strong> del juego (Paper Mario, N64, versión USA o europea). Aquí no se distribuye ninguna ROM ni contenido de Nintendo.</p>
 </section>
 
 <section class="section" id="features">
@@ -97,22 +97,30 @@
     </li>
     <li>
       <h3 data-i18n="s2.t">Haz el dump de tu cartucho</h3>
-      <p data-i18n-html="s2.d">Extrae la ROM de <strong>tu propio</strong> cartucho de Paper Mario (N64, versión USA) en formato <code>.z64</code>. Para comprobar que es la correcta, su SHA-1 debe ser:</p>
+      <p data-i18n-html="s2.d">Extrae la ROM de <strong>tu propio</strong> cartucho de Paper Mario (N64). Sirven la versión <strong>USA</strong> y la <strong>europea (PAL)</strong>, en <code>.z64</code>, <code>.n64</code> o <code>.v64</code>. Para comprobar que es la correcta, su SHA-1 (en <code>.z64</code>) debe ser:</p>
+      <p class="hash-label" data-i18n="s2.us">USA (inglés):</p>
       <code class="hash">3837f44cda784b466c9a2d99df70d77c322b97a0</code>
+      <p class="hash-label" data-i18n="s2.pal">Europa / PAL (español, inglés, francés y alemán):</p>
+      <code class="hash">2111d39265a317414d359e35a7d971c4dfa5f9e1</code>
     </li>
     <li>
       <h3 data-i18n="s3.t">Cópiala a la SD</h3>
-      <p data-i18n-html="s3.d">Ponle de nombre <code>baserom.z64</code> y cópiala a <code>sdmc:/3ds/papermario/baserom.z64</code> (crea la carpeta si no existe).</p>
+      <p data-i18n-html="s3.d">Ponle de nombre <code>baserom.z64</code> (o <code>baserom.n64</code> / <code>baserom.v64</code>) y cópiala a la carpeta de su versión (créala si no existe):<br>USA: <code>sdmc:/3ds/papermario/</code><br>Europa (PAL): <code>sdmc:/3ds/PaperRPG_Espanol/</code></p>
     </li>
     <li>
       <h3 data-i18n="s4.t">Instala el port</h3>
-      <p data-i18n-html="s4.d"><strong>Recomendado:</strong> instala <code>papermario.cia</code> con FBI y ábrelo desde el menú HOME. También puedes copiar <code>papermario.3dsx</code> a <code>sdmc:/3ds/</code> y abrirlo desde el Homebrew Launcher, aunque el audio usa menos recursos con el CIA.</p>
-      <div class="qr">
-        <img src="assets/img/qr-cia.svg" width="180" height="180" alt="QR code: papermario.cia">
-        <div>
-          <h4 data-i18n="qr.t">Instala con un QR desde FBI</h4>
-          <p data-i18n-html="qr.d">Con la consola conectada a internet, abre <strong>FBI</strong> &rarr; <strong>Remote Install</strong> &rarr; <strong>Scan QR Code</strong> y apunta la cámara a este código. FBI descarga e instala la última versión de <code>papermario.cia</code>. Sigue haciendo falta tu <code>baserom.z64</code> en la SD (paso 3).</p>
-        </div>
+      <p data-i18n-html="s4.d">Instala el de <strong>tu versión</strong>: <code>PaperRPG_English.cia</code> (ROM USA) o <code>PaperRPG_Espanol.cia</code> (ROM europea PAL). Los dos pueden estar instalados a la vez. <strong>Recomendado:</strong> el CIA con FBI, que se abre desde el menú HOME; también hay <code>.3dsx</code> para el Homebrew Launcher, aunque el audio usa menos recursos con el CIA.</p>
+      <h4 class="qr-title" data-i18n="qr.t">Instala con un QR desde FBI</h4>
+      <p data-i18n-html="qr.d">Con la consola conectada a internet, abre <strong>FBI</strong> &rarr; <strong>Remote Install</strong> &rarr; <strong>Scan QR Code</strong> y escanea el código de <strong>tu versión</strong>. FBI descarga e instala la más reciente. Sigue haciendo falta tu ROM en la SD (paso 3).</p>
+      <div class="qr-pair">
+        <figure class="qr">
+          <img src="assets/img/qr-english.svg" width="180" height="180" alt="QR: PaperRPG_English.cia">
+          <figcaption><strong data-i18n="qr.us">Versión USA</strong><span data-i18n="qr.us.d">Inglés · ROM USA</span><code>PaperRPG_English.cia</code></figcaption>
+        </figure>
+        <figure class="qr">
+          <img src="assets/img/qr-espanol.svg" width="180" height="180" alt="QR: PaperRPG_Espanol.cia">
+          <figcaption><strong data-i18n="qr.pal">Versión europea (PAL)</strong><span data-i18n="qr.pal.d">Español, inglés, francés y alemán · ROM PAL</span><code>PaperRPG_Espanol.cia</code></figcaption>
+        </figure>
       </div>
     </li>
   </ol>
@@ -127,7 +135,7 @@
   </details>
   <details>
     <summary data-i18n="q2">¿Funciona con la versión europea o japonesa?</summary>
-    <p data-i18n="a2">Por ahora no. Solo la versión USA (código NMQE). Si usas otra, el port te avisa al abrirlo.</p>
+    <p data-i18n="a2">Desde la versión 1.1 funciona con la europea (PAL, código NMQP) usando PaperRPG_Espanol, con sus cuatro idiomas: el idioma se cambia desde la pantalla de título, en la pantalla táctil. La japonesa todavía no. Si usas una ROM que no corresponde, el port te avisa al abrirlo.</p>
   </details>
   <details>
     <summary data-i18n="q3">¿En qué consolas funciona?</summary>
@@ -135,7 +143,7 @@
   </details>
   <details>
     <summary data-i18n="q4">¿Dónde se guarda mi partida?</summary>
-    <p data-i18n-html="a4">En <code>sdmc:/3ds/papermario/save.flash</code>; los save states en <code>state1.bin</code>–<code>state3.bin</code> y los ajustes en <code>config.ini</code>, en la misma carpeta. Los save states se invalidan al actualizar el port; la partida normal no.</p>
+    <p data-i18n-html="a4">En <code>save.flash</code>, dentro de la carpeta de tu versión (<code>sdmc:/3ds/papermario/</code> o <code>sdmc:/3ds/PaperRPG_Espanol/</code>); los save states en <code>state1.bin</code>–<code>state3.bin</code> y los ajustes en <code>config.ini</code>, en la misma carpeta. Los save states se invalidan al actualizar el port; la partida normal no.</p>
   </details>
   <details>
     <summary data-i18n="q5">¿Puedo usar mi partida de un emulador?</summary>

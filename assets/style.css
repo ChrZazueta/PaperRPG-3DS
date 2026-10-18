@@ -258,28 +258,41 @@ code {
 
 .steps p { margin: 0; }
 
+.qr-title { margin: 14px 0 6px; font: 800 1.15rem/1.2 "Baloo 2", sans-serif; }
+.qr-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 12px;
+}
 .qr {
+  margin: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 18px;
-  margin-top: 14px;
+  gap: 10px;
   padding: 14px;
   background: var(--paper-2);
   border: 2px dashed var(--line);
   border-radius: var(--radius);
+  text-align: center;
 }
 .qr img {
-  flex: none;
   width: 180px;
-  height: 180px;
+  max-width: 100%;
+  height: auto;
   background: #fff;
   border: 3px solid var(--line);
   border-radius: 8px;
   padding: 6px;
 }
-.qr h4 { margin: 0 0 6px; font: 800 1.15rem/1.2 "Baloo 2", sans-serif; }
+.qr figcaption { display: grid; gap: 2px; }
+.qr figcaption strong { font: 800 1.1rem/1.2 "Baloo 2", sans-serif; }
+.qr figcaption span { color: var(--ink-soft); font-size: .92rem; }
+.qr figcaption code { font-size: .85rem; }
+.hash-label { margin: 10px 0 2px; font-weight: 700; }
 @media (max-width: 560px) {
-  .qr { flex-direction: column; text-align: center; }
+  .qr-pair { grid-template-columns: 1fr; }
 }
 
 .hash {
