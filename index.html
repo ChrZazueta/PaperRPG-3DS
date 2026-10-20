@@ -53,7 +53,7 @@
     </article>
     <article class="card">
       <h3 data-i18n="f3.t">Batallas táctiles</h3>
-      <p data-i18n="f3.d">La rueda de comandos original responde al toque, y eliges a tu objetivo tocando su imagen.</p>
+      <p data-i18n="f3.d">La rueda de comandos original responde al toque y eliges a tu objetivo tocando su imagen. Los comandos de acción (saltos, martillo, barras) también se hacen en la pantalla táctil.</p>
     </article>
     <article class="card">
       <h3 data-i18n="f4.t">Save states</h3>
@@ -67,6 +67,10 @@
       <h3 data-i18n="f6.t">3D y más opciones</h3>
       <p data-i18n="f6.d">3D estereoscópico opcional, modo oscuro, filtro de imagen, botón Z configurable, Skip/Auto en cinemáticas y menús en español o inglés.</p>
     </article>
+    <article class="card">
+      <h3 data-i18n="f7.t">Una versión, se actualiza sola</h3>
+      <p data-i18n="f7.d">Funciona con la ROM europea o la americana. Al abrirlo con Wi-Fi te avisa si hay una versión nueva y se actualiza con un toque.</p>
+    </article>
   </div>
 </section>
 
@@ -77,6 +81,7 @@
     <figure><img src="assets/img/shots/koopabros.png" alt="" width="848" height="1088" loading="lazy"><figcaption data-i18n="g2">Combates interactivos con touch</figcaption></figure>
     <figure><img src="assets/img/shots/settings.png" alt="" width="848" height="1088" loading="lazy"><figcaption data-i18n="g3">Ajustes, mod menu y save states</figcaption></figure>
     <figure><img src="assets/img/shots/modmenu.png" alt="" width="848" height="1088" loading="lazy"><figcaption data-i18n="g4">Mod menu</figcaption></figure>
+    <figure><img src="assets/img/shots/actioncommands.png" alt="" width="848" height="1088" loading="lazy"><figcaption data-i18n="g5">Comandos de acción desde la pantalla táctil</figcaption></figure>
   </div>
 </section>
 
@@ -105,21 +110,17 @@
     </li>
     <li>
       <h3 data-i18n="s3.t">Cópiala a la SD</h3>
-      <p data-i18n-html="s3.d">Ponle de nombre <code>baserom.z64</code> (o <code>baserom.n64</code> / <code>baserom.v64</code>) y cópiala a la carpeta de su versión (créala si no existe):<br>USA: <code>sdmc:/3ds/papermario/</code><br>Europa (PAL): <code>sdmc:/3ds/PaperRPG_Espanol/</code></p>
+      <p data-i18n-html="s3.d">Cópiala a <code>sdmc:/3ds/PaperRPG/</code> (crea la carpeta si no existe) con cualquier nombre que contenga <strong>paper</strong>, por ejemplo <code>Paper Mario (USA).z64</code>. El port detecta solo si es la USA o la europea; si pones las dos, al abrirlo te pregunta cuál jugar.</p>
     </li>
     <li>
       <h3 data-i18n="s4.t">Instala el port</h3>
-      <p data-i18n-html="s4.d">Instala el de <strong>tu versión</strong>: <code>PaperRPG_English.cia</code> (ROM USA) o <code>PaperRPG_Espanol.cia</code> (ROM europea PAL). Los dos pueden estar instalados a la vez. <strong>Recomendado:</strong> el CIA con FBI, que se abre desde el menú HOME; también hay <code>.3dsx</code> para el Homebrew Launcher, aunque el audio usa menos recursos con el CIA.</p>
+      <p data-i18n-html="s4.d">Instala <code>PaperRPG.cia</code> con FBI (<strong>recomendado</strong>, se abre desde el menú HOME) o copia <code>PaperRPG.3dsx</code> a <code>sdmc:/3ds/</code> para el Homebrew Launcher. Si tenías una versión anterior (<code>PaperRPG_English</code> o <code>PaperRPG_Espanol</code>), desinstálala desde FBI: tu partida está en la SD y se conserva.</p>
       <h4 class="qr-title" data-i18n="qr.t">Instala con un QR desde FBI</h4>
-      <p data-i18n-html="qr.d">Con la consola conectada a internet, abre <strong>FBI</strong> &rarr; <strong>Remote Install</strong> &rarr; <strong>Scan QR Code</strong> y escanea el código de <strong>tu versión</strong>. FBI descarga e instala la más reciente. Sigue haciendo falta tu ROM en la SD (paso 3).</p>
+      <p data-i18n-html="qr.d">Con la consola conectada a internet, abre <strong>FBI</strong> &rarr; <strong>Remote Install</strong> &rarr; <strong>Scan QR Code</strong> y escanea este código. FBI descarga e instala la versión más reciente. Sigue haciendo falta tu ROM en la SD (paso 3).</p>
       <div class="qr-pair">
         <figure class="qr">
-          <img src="assets/img/qr-english.svg" width="180" height="180" alt="QR: PaperRPG_English.cia">
-          <figcaption><strong data-i18n="qr.us">Versión USA</strong><br><span data-i18n="qr.us.d">Inglés · ROM USA</span><br><code>PaperRPG_English.cia</code></figcaption>
-        </figure>
-        <figure class="qr">
-          <img src="assets/img/qr-espanol.svg" width="180" height="180" alt="QR: PaperRPG_Espanol.cia">
-          <figcaption><strong data-i18n="qr.pal">Versión europea (PAL)</strong><br><span data-i18n="qr.pal.d">Español, inglés, francés y alemán · ROM PAL</span><br><code>PaperRPG_Espanol.cia</code></figcaption>
+          <img src="assets/img/qr-paperrpg.svg" width="180" height="180" alt="QR: PaperRPG.cia">
+          <figcaption><strong data-i18n="qr.one">PaperRPG</strong><br><span data-i18n="qr.one.d">ROM USA o europea (PAL)</span><br><code>PaperRPG.cia</code></figcaption>
         </figure>
       </div>
     </li>
@@ -135,7 +136,7 @@
   </details>
   <details>
     <summary data-i18n="q2">¿Funciona con la versión europea o japonesa?</summary>
-    <p data-i18n="a2">Desde la versión 1.1 funciona con la europea (PAL, código NMQP) usando PaperRPG_Espanol, con sus cuatro idiomas: el idioma se cambia desde la pantalla de título, en la pantalla táctil. La japonesa todavía no. Si usas una ROM que no corresponde, el port te avisa al abrirlo.</p>
+    <p data-i18n="a2">Funciona con la europea (PAL, con sus cuatro idiomas: el idioma se cambia desde la pantalla de título, en la pantalla táctil) y con la americana; el mismo port reconoce cuál tienes. La japonesa todavía no. Si la ROM no es una de esas, el port te avisa al abrirlo.</p>
   </details>
   <details>
     <summary data-i18n="q3">¿En qué consolas funciona?</summary>
@@ -143,7 +144,11 @@
   </details>
   <details>
     <summary data-i18n="q4">¿Dónde se guarda mi partida?</summary>
-    <p data-i18n-html="a4">En <code>save.flash</code>, dentro de la carpeta de tu versión (<code>sdmc:/3ds/papermario/</code> o <code>sdmc:/3ds/PaperRPG_Espanol/</code>); los save states en <code>state1.bin</code>–<code>state3.bin</code> y los ajustes en <code>config.ini</code>, en la misma carpeta. Los save states se invalidan al actualizar el port; la partida normal no.</p>
+    <p data-i18n-html="a4">En <code>save.flash</code>, dentro de la carpeta de tu versión: <code>sdmc:/3ds/PaperRPG_English/</code> (ROM USA) o <code>sdmc:/3ds/PaperRPG_Espanol/</code> (ROM europea); la carpeta antigua <code>papermario</code> se renombra sola. Los save states van en <code>state1.bin</code>–<code>state3.bin</code> y los ajustes en <code>config.ini</code>, en la misma carpeta. Los save states se invalidan al actualizar el port; la partida normal no.</p>
+  </details>
+  <details>
+    <summary data-i18n="q7">¿Cómo actualizo el port?</summary>
+    <p data-i18n="a7">Si la consola tiene el Wi-Fi activado, el port revisa al abrirse si hay una versión nueva y te avisa en la pantalla táctil; con un toque se descarga e instala. También puedes buscar desde Ajustes &gt; Actualizar. Sin conexión o sin novedades no aparece nada.</p>
   </details>
   <details>
     <summary data-i18n="q5">¿Puedo usar mi partida de un emulador?</summary>
@@ -163,6 +168,6 @@
   <p data-i18n-html="credits">Basado en la decompilación de Paper Mario de <a href="https://github.com/pmret/papermario" rel="noopener">pmret</a>. Hecho con <a href="https://devkitpro.org" rel="noopener">devkitPro</a>, libctru y citro3d. Port por <a href="https://github.com/ChrZazueta" rel="noopener">ChrZazueta</a>.</p>
 </footer>
 
-<script src="assets/i18n.js?v=1.1"></script>
+<script src="assets/i18n.js?v=1.2"></script>
 </body>
 </html>

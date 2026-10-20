@@ -8,14 +8,16 @@
 🌐 **https://chrzazueta.github.io/PaperRPG-3DS/**
 
 > [!IMPORTANT]
-> Necesitas **tu propia copia** del juego (Paper Mario, N64, versión USA). Aquí no se distribuye ninguna ROM ni contenido de Nintendo.
-> You need **your own copy** of the game (Paper Mario, N64, USA version). No ROMs or Nintendo content are distributed here.
+> Necesitas **tu propia copia** del juego (Paper Mario, N64, versión USA o europea). Aquí no se distribuye ninguna ROM ni contenido de Nintendo.
+> You need **your own copy** of the game (Paper Mario, N64, USA or European version). No ROMs or Nintendo content are distributed here.
 
 ## Características / Features
 
 - 30 fps estables en Old 3DS · stable 30 fps on Old 3DS
 - Pantalla táctil: medallas, objetos, mapa, espíritus, estadísticas y cambio rápido de compañero · touch screen with badges, items, map, spirits, stats and quick partner swap
-- Rueda de comandos y selección de objetivo táctiles · touch command wheel and target selection
+- Rueda de comandos, selección de objetivo y comandos de acción táctiles · touch command wheel, target selection and action commands
+- Una sola versión para la ROM USA y la europea (PAL, 4 idiomas) · one version for the USA and European (PAL, 4 languages) ROMs
+- Avisa y se actualiza con un toque (con Wi-Fi) · notifies and updates with one tap (with Wi-Fi)
 - 3 save states con miniatura y fecha · 3 save states with thumbnail and date
 - Mod menu (monedas infinitas, modo dios, stats al máximo, carrera rápida, OHKO…) · mod menu
 - 3D estereoscópico opcional, modo oscuro, filtro, Skip/Auto en cinemáticas, menús en español/inglés · optional stereoscopic 3D, dark mode, filter, cutscene Skip/Auto, Spanish/English menus
@@ -23,10 +25,11 @@
 ## Instalación / Installation
 
 1. Consola con Luma3DS ([3ds.hacks.guide](https://3ds.hacks.guide/)) · console with Luma3DS.
-2. Haz el dump de tu cartucho USA en `.z64` · dump your USA cartridge as `.z64`.
-   SHA-1: `3837f44cda784b466c9a2d99df70d77c322b97a0`
-3. Cópialo a / copy it to `sdmc:/3ds/papermario/baserom.z64`.
-4. Instala `papermario.cia` con FBI (recomendado) o copia `papermario.3dsx` a `sdmc:/3ds/` · install the CIA with FBI (recommended) or use the 3DSX with the Homebrew Launcher.
+2. Haz el dump de tu cartucho (USA o europeo) en `.z64`, `.n64` o `.v64` · dump your cartridge (USA or European).
+   SHA-1 (`.z64`) USA: `3837f44cda784b466c9a2d99df70d77c322b97a0` · PAL: `2111d39265a317414d359e35a7d971c4dfa5f9e1`
+3. Cópialo a / copy it to `sdmc:/3ds/PaperRPG/` con cualquier nombre que contenga "paper" · with any name containing "paper" (e.g. `Paper Mario (USA).z64`).
+4. Instala `PaperRPG.cia` con FBI (recomendado) o copia `PaperRPG.3dsx` a `sdmc:/3ds/` · install `PaperRPG.cia` with FBI (recommended) or use `PaperRPG.3dsx` with the Homebrew Launcher.
+   Si tenías `PaperRPG_English` o `PaperRPG_Espanol`, desinstálalo; tu partida se conserva · if you had `PaperRPG_English` or `PaperRPG_Espanol`, uninstall it; your save is kept.
 
 Descargas en / downloads in [Releases](https://github.com/ChrZazueta/PaperRPG-3DS/releases/latest).
 
